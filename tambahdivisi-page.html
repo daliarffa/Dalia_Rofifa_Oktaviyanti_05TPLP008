@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body></body>
+</html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Data Jabatan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50 min-h-screen flex items-center justify-center">
+    <div class="max-w-3xl w-full bg-white shadow-lg rounded-lg p-6">
+      <!-- Header Form -->
+      <div class="pb-4 border-b border-gray-200">
+        <h2 class="text-2xl font-semibold text-gray-800">
+          Tambah Data Divisi
+        </h2>
+      </div>
+
+      <!-- Form -->
+      <form class="mt-6 space-y-4">
+        <div>
+          <label class="block text-gray-700">Kode Divisi</label>
+          <input
+            type="text"
+            class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Kode Jabatan"
+          />
+        </div>
+
+        <div>
+          <label class="block text-gray-700">Divisi</label>
+          <select
+            class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option>---</option>
+            <option>Umum</option>
+            <option>Teknologi Informasi</option>
+            <option>Finance</option>
+            <option>Operasional</option>
+            <option>Creative</option>
+          </select>
+        </div>
+        <!-- Tombol Simpan dan Batal -->
+        <div class="flex space-x-4 mt-6">
+          <button
+            type="submit"
+            class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-md"
+          >
+            Simpan
+          </button>
+          <button
+            type="button"
+            class="flex-1 bg-red-500 hover:bg-red-600 text-white py-2 rounded-md"
+          >
+            Batal
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
